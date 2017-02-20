@@ -1,0 +1,24 @@
+.insertValue {
+    margin-left: 50%;
+}
+
+.boundingBox {
+    width: 600px;
+    height: 600px;
+    background-color: lightgray;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.circle {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: #999;
+    border-radius: 15px;
+}
+
+#tb1 {
+    background-color: antiquewhite;
+}

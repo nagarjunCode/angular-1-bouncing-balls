@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script/angular1.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <div ng-app="animateApp" ng-controller="AnimateCtrl">
+
+
+        <div class="boundingBox">
+            <ball ng-repeat="shape in shapes" x="shape.x" y="shape.y" color="shape.color"></ball>
+        </div>
+        <input type="text" class="getValue" id="tb1" ng-model="ballCount">
+        <button ng-click="insertVal(ballCount)">Insert</button>
+    </div>
+</body>
+
+</html>

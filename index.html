@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bouncing Ball</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="script/angular1.js"></script>
+    <script src="script/script.js"></script>
+
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="text" class="insertValue" id="tb1" ng-model="ballCount">
+        <button ng-click="buildShape(ballCount)">Insert</button>
+
+
+        <div class="boundingBox">
+            <balls ng-repeat="shape in shapes" x="shape.x" y="shape.y" color="shape.color"></balls>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
